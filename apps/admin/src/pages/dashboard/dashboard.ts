@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject, ViewEncapsulation } from '@angular/core';
 import { BreadcrumbService } from '../../services/breadcrumb';
+import BlankComponent from '../../components/blank/blank';
+
 
 @Component({
-  imports: [],
+  imports: [BlankComponent],
   templateUrl: './dashboard.html',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
